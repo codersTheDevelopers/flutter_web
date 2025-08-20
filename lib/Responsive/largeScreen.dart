@@ -5,17 +5,23 @@ class largeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return const Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            Text(
-          'This is a large screen',
-          style: TextStyle(fontSize: 24, color: Colors.green),
-        ),
-          ],
-        )
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              'Large Screen',
+              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          Text(
+            'This is a large screen layout.',
+            style: TextStyle(fontSize: 20),
+          ),
+        ],
       ),
     );
   }
